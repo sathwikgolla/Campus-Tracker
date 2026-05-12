@@ -1,0 +1,9 @@
+import express from "express";
+import { createBroadcast, getBroadcasts } from "../controllers/advancedController.js";
+import { protect } from "../middleware/authMiddleware.js";
+import { authorize } from "../middleware/roleMiddleware.js";
+
+const router = express.Router();
+router.get("/", protect, getBroadcasts);
+router.post("/", protect, authorize("admin"), createBroadcast);
+export default router;

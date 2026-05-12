@@ -1,0 +1,654 @@
+{
+  "teachers": [
+    {
+      "name": "Yakshit Gole",
+      "department": "Mechanical",
+      "designation": "Assistant Professor",
+      "cabin": "MECH-207",
+      "email": "yakshit.gole@campustracker.edu.in",
+      "phone": "9896233790",
+      "subjects": [
+        "Manufacturing Technology",
+        "Fluid Mechanics",
+        "Thermodynamics"
+      ]
+    },
+    {
+      "name": "Badal Sidhu",
+      "department": "AI&DS",
+      "designation": "Professor",
+      "cabin": "AIDS-227",
+      "email": "badal.sidhu@campustracker.edu.in",
+      "phone": "9826600539",
+      "subjects": [
+        "Big Data Analytics",
+        "Deep Learning",
+        "Data Mining"
+      ]
+    },
+    {
+      "name": "Shayak Kale",
+      "department": "ECE",
+      "designation": "Assistant Professor",
+      "cabin": "ECE-208",
+      "email": "shayak.kale@campustracker.edu.in",
+      "phone": "9200604502",
+      "subjects": [
+        "Signals and Systems",
+        "Microprocessors",
+        "Embedded Systems"
+      ]
+    },
+    {
+      "name": "Sara Choudhury",
+      "department": "EEE",
+      "designation": "Assistant Professor",
+      "cabin": "EEE-344",
+      "email": "sara.choudhury@campustracker.edu.in",
+      "phone": "9313500298",
+      "subjects": [
+        "Circuit Theory",
+        "Power Electronics",
+        "Power Systems"
+      ]
+    },
+    {
+      "name": "Vaibhav Babu",
+      "department": "ECE",
+      "designation": "Professor",
+      "cabin": "ECE-272",
+      "email": "vaibhav.babu@campustracker.edu.in",
+      "phone": "9969119330",
+      "subjects": [
+        "Digital Electronics",
+        "Signals and Systems",
+        "Embedded Systems"
+      ]
+    },
+    {
+      "name": "Darshit Chadha",
+      "department": "ECE",
+      "designation": "Associate Professor",
+      "cabin": "ECE-272",
+      "email": "darshit.chadha@campustracker.edu.in",
+      "phone": "9266944844",
+      "subjects": [
+        "Signals and Systems",
+        "Embedded Systems",
+        "Digital Electronics"
+      ]
+    },
+    {
+      "name": "Taimur Swaminathan",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "cabin": "CSE-225",
+      "email": "taimur.swaminathan@campustracker.edu.in",
+      "phone": "9485451171",
+      "subjects": [
+        "DBMS",
+        "Machine Learning",
+        "Operating Systems"
+      ]
+    },
+    {
+      "name": "Kimaya Singh",
+      "department": "Mechanical",
+      "designation": "Associate Professor",
+      "cabin": "MECH-338",
+      "email": "kimaya.singh@campustracker.edu.in",
+      "phone": "9234031070",
+      "subjects": [
+        "Machine Design",
+        "Thermodynamics",
+        "Manufacturing Technology"
+      ]
+    },
+    {
+      "name": "Manjari Chander",
+      "department": "IT",
+      "designation": "Professor",
+      "cabin": "IT-359",
+      "email": "manjari.chander@campustracker.edu.in",
+      "phone": "9488302652",
+      "subjects": [
+        "Linux Administration",
+        "Web Technologies",
+        "Cyber Security"
+      ]
+    },
+    {
+      "name": "Gokul Suresh",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "cabin": "CSE-370",
+      "email": "gokul.suresh@campustracker.edu.in",
+      "phone": "9344703907",
+      "subjects": [
+        "DBMS",
+        "Operating Systems",
+        "Java Programming"
+      ]
+    },
+    {
+      "name": "Divyansh Tata",
+      "department": "Civil",
+      "designation": "Assistant Professor",
+      "cabin": "CIV-298",
+      "email": "divyansh.tata@campustracker.edu.in",
+      "phone": "9398471886",
+      "subjects": [
+        "Geotechnical Engineering",
+        "Surveying",
+        "Structural Analysis"
+      ]
+    },
+    {
+      "name": "Jayesh Bhavsar",
+      "department": "IT",
+      "designation": "Associate Professor",
+      "cabin": "IT-254",
+      "email": "jayesh.bhavsar@campustracker.edu.in",
+      "phone": "9819595113",
+      "subjects": [
+        "Cyber Security",
+        "Cloud Computing",
+        "Linux Administration"
+      ]
+    },
+    {
+      "name": "Sumer Golla",
+      "department": "Mechanical",
+      "designation": "Assistant Professor",
+      "cabin": "MECH-337",
+      "email": "sumer.golla@campustracker.edu.in",
+      "phone": "9882893941",
+      "subjects": [
+        "Fluid Mechanics",
+        "CAD/CAM",
+        "Machine Design"
+      ]
+    },
+    {
+      "name": "Vivaan Thaker",
+      "department": "ECE",
+      "designation": "Associate Professor",
+      "cabin": "ECE-364",
+      "email": "vivaan.thaker@campustracker.edu.in",
+      "phone": "9838908273",
+      "subjects": [
+        "Microprocessors",
+        "Signals and Systems",
+        "Embedded Systems"
+      ]
+    },
+    {
+      "name": "Vidur Mannan",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "cabin": "IT-259",
+      "email": "vidur.mannan@campustracker.edu.in",
+      "phone": "9982403818",
+      "subjects": [
+        "Cloud Computing",
+        "Cyber Security",
+        "Web Technologies"
+      ]
+    },
+    {
+      "name": "Lakshit Bhatt",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "cabin": "IT-255",
+      "email": "lakshit.bhatt@campustracker.edu.in",
+      "phone": "9709004943",
+      "subjects": [
+        "Cyber Security",
+        "Web Technologies",
+        "Linux Administration"
+      ]
+    },
+    {
+      "name": "Devansh Kara",
+      "department": "ECE",
+      "designation": "Associate Professor",
+      "cabin": "ECE-365",
+      "email": "devansh.kara@campustracker.edu.in",
+      "phone": "9592688426",
+      "subjects": [
+        "Signals and Systems",
+        "Embedded Systems",
+        "Digital Electronics"
+      ]
+    },
+    {
+      "name": "Kashvi Soman",
+      "department": "AI&DS",
+      "designation": "Professor",
+      "cabin": "AIDS-344",
+      "email": "kashvi.soman@campustracker.edu.in",
+      "phone": "9678722458",
+      "subjects": [
+        "Data Mining",
+        "Python for AI",
+        "Big Data Analytics"
+      ]
+    },
+    {
+      "name": "Kimaya Zacharia",
+      "department": "ECE",
+      "designation": "Associate Professor",
+      "cabin": "ECE-257",
+      "email": "kimaya.zacharia@campustracker.edu.in",
+      "phone": "9248532577",
+      "subjects": [
+        "Microprocessors",
+        "VLSI Design",
+        "Digital Electronics"
+      ]
+    },
+    {
+      "name": "Tejas Hora",
+      "department": "Civil",
+      "designation": "Assistant Professor",
+      "cabin": "CIV-229",
+      "email": "tejas.hora@campustracker.edu.in",
+      "phone": "9264112119",
+      "subjects": [
+        "Concrete Technology",
+        "Geotechnical Engineering",
+        "Surveying"
+      ]
+    },
+    {
+      "name": "Charvi Dara",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "cabin": "CSE-298",
+      "email": "charvi.dara@campustracker.edu.in",
+      "phone": "9739830322",
+      "subjects": [
+        "Java Programming",
+        "DBMS",
+        "Machine Learning"
+      ]
+    },
+    {
+      "name": "Aarna Ranganathan",
+      "department": "Civil",
+      "designation": "Assistant Professor",
+      "cabin": "CIV-375",
+      "email": "aarna.ranganathan@campustracker.edu.in",
+      "phone": "9873869166",
+      "subjects": [
+        "Structural Analysis",
+        "Surveying",
+        "Geotechnical Engineering"
+      ]
+    },
+    {
+      "name": "Uthkarsh Hayer",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "cabin": "IT-276",
+      "email": "uthkarsh.hayer@campustracker.edu.in",
+      "phone": "9566825638",
+      "subjects": [
+        "Web Technologies",
+        "Software Engineering",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "name": "Seher Khatri",
+      "department": "Mechanical",
+      "designation": "Professor",
+      "cabin": "MECH-268",
+      "email": "seher.khatri@campustracker.edu.in",
+      "phone": "9637500247",
+      "subjects": [
+        "Fluid Mechanics",
+        "Thermodynamics",
+        "Manufacturing Technology"
+      ]
+    },
+    {
+      "name": "Aayush Dhaliwal",
+      "department": "IT",
+      "designation": "Professor",
+      "cabin": "IT-330",
+      "email": "aayush.dhaliwal@campustracker.edu.in",
+      "phone": "9753876785",
+      "subjects": [
+        "Web Technologies",
+        "Linux Administration",
+        "Software Engineering"
+      ]
+    },
+    {
+      "name": "Shanaya Malhotra",
+      "department": "Civil",
+      "designation": "Assistant Professor",
+      "cabin": "CIV-339",
+      "email": "shanaya.malhotra@campustracker.edu.in",
+      "phone": "9936043811",
+      "subjects": [
+        "Transportation Engineering",
+        "Structural Analysis",
+        "Surveying"
+      ]
+    },
+    {
+      "name": "Piya Biswas",
+      "department": "IT",
+      "designation": "Associate Professor",
+      "cabin": "IT-205",
+      "email": "piya.biswas@campustracker.edu.in",
+      "phone": "9220117054",
+      "subjects": [
+        "Cyber Security",
+        "Linux Administration",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "name": "Nitya Amble",
+      "department": "CSE",
+      "designation": "Assistant Professor",
+      "cabin": "CSE-346",
+      "email": "nitya.amble@campustracker.edu.in",
+      "phone": "9184564737",
+      "subjects": [
+        "Operating Systems",
+        "Java Programming",
+        "Machine Learning"
+      ]
+    },
+    {
+      "name": "Ryan Hayer",
+      "department": "Civil",
+      "designation": "Professor",
+      "cabin": "CIV-397",
+      "email": "ryan.hayer@campustracker.edu.in",
+      "phone": "9235034324",
+      "subjects": [
+        "Concrete Technology",
+        "Geotechnical Engineering",
+        "Surveying"
+      ]
+    },
+    {
+      "name": "Aayush Ramanathan",
+      "department": "AI&DS",
+      "designation": "Associate Professor",
+      "cabin": "AIDS-336",
+      "email": "aayush.ramanathan@campustracker.edu.in",
+      "phone": "9751325257",
+      "subjects": [
+        "Python for AI",
+        "Artificial Intelligence",
+        "Data Mining"
+      ]
+    },
+    {
+      "name": "Madhup Chopra",
+      "department": "Civil",
+      "designation": "Professor",
+      "cabin": "CIV-377",
+      "email": "madhup.chopra@campustracker.edu.in",
+      "phone": "9315984311",
+      "subjects": [
+        "Surveying",
+        "Geotechnical Engineering",
+        "Transportation Engineering"
+      ]
+    },
+    {
+      "name": "Vedika Kannan",
+      "department": "Mechanical",
+      "designation": "Associate Professor",
+      "cabin": "MECH-313",
+      "email": "vedika.kannan@campustracker.edu.in",
+      "phone": "9655742829",
+      "subjects": [
+        "Machine Design",
+        "Thermodynamics",
+        "CAD/CAM"
+      ]
+    },
+    {
+      "name": "Alisha Dhillon",
+      "department": "AI&DS",
+      "designation": "Assistant Professor",
+      "cabin": "AIDS-287",
+      "email": "alisha.dhillon@campustracker.edu.in",
+      "phone": "9122585366",
+      "subjects": [
+        "Big Data Analytics",
+        "Artificial Intelligence",
+        "Data Mining"
+      ]
+    },
+    {
+      "name": "Ishaan Zacharia",
+      "department": "AI&DS",
+      "designation": "Assistant Professor",
+      "cabin": "AIDS-219",
+      "email": "ishaan.zacharia@campustracker.edu.in",
+      "phone": "9860038427",
+      "subjects": [
+        "Deep Learning",
+        "Artificial Intelligence",
+        "Big Data Analytics"
+      ]
+    },
+    {
+      "name": "Anahita Joshi",
+      "department": "CSE",
+      "designation": "Associate Professor",
+      "cabin": "CSE-219",
+      "email": "anahita.joshi@campustracker.edu.in",
+      "phone": "9652070932",
+      "subjects": [
+        "Computer Networks",
+        "DBMS",
+        "Java Programming"
+      ]
+    },
+    {
+      "name": "Aarav Mani",
+      "department": "ECE",
+      "designation": "Assistant Professor",
+      "cabin": "ECE-339",
+      "email": "aarav.mani@campustracker.edu.in",
+      "phone": "9242068763",
+      "subjects": [
+        "Microprocessors",
+        "VLSI Design",
+        "Digital Electronics"
+      ]
+    },
+    {
+      "name": "Mamooty Sawhney",
+      "department": "Civil",
+      "designation": "Associate Professor",
+      "cabin": "CIV-407",
+      "email": "mamooty.sawhney@campustracker.edu.in",
+      "phone": "9537077308",
+      "subjects": [
+        "Concrete Technology",
+        "Structural Analysis",
+        "Geotechnical Engineering"
+      ]
+    },
+    {
+      "name": "Shayak Dugal",
+      "department": "Mechanical",
+      "designation": "Associate Professor",
+      "cabin": "MECH-291",
+      "email": "shayak.dugal@campustracker.edu.in",
+      "phone": "9554814084",
+      "subjects": [
+        "Machine Design",
+        "CAD/CAM",
+        "Manufacturing Technology"
+      ]
+    },
+    {
+      "name": "Yasmin Arora",
+      "department": "CSE",
+      "designation": "Professor",
+      "cabin": "CSE-368",
+      "email": "yasmin.arora@campustracker.edu.in",
+      "phone": "9793830224",
+      "subjects": [
+        "Operating Systems",
+        "Machine Learning",
+        "Computer Networks"
+      ]
+    },
+    {
+      "name": "Taran Anne",
+      "department": "Mechanical",
+      "designation": "Associate Professor",
+      "cabin": "MECH-405",
+      "email": "taran.anne@campustracker.edu.in",
+      "phone": "9217326729",
+      "subjects": [
+        "Fluid Mechanics",
+        "CAD/CAM",
+        "Thermodynamics"
+      ]
+    },
+    {
+      "name": "Tiya Manne",
+      "department": "EEE",
+      "designation": "Associate Professor",
+      "cabin": "EEE-236",
+      "email": "tiya.manne@campustracker.edu.in",
+      "phone": "9552991960",
+      "subjects": [
+        "Electrical Machines",
+        "Control Systems",
+        "Circuit Theory"
+      ]
+    },
+    {
+      "name": "Damini Dugar",
+      "department": "AI&DS",
+      "designation": "Assistant Professor",
+      "cabin": "AIDS-314",
+      "email": "damini.dugar@campustracker.edu.in",
+      "phone": "9967607278",
+      "subjects": [
+        "Big Data Analytics",
+        "Deep Learning",
+        "Python for AI"
+      ]
+    },
+    {
+      "name": "Vritika Bhat",
+      "department": "Mechanical",
+      "designation": "Professor",
+      "cabin": "MECH-415",
+      "email": "vritika.bhat@campustracker.edu.in",
+      "phone": "9115846122",
+      "subjects": [
+        "Thermodynamics",
+        "Fluid Mechanics",
+        "CAD/CAM"
+      ]
+    },
+    {
+      "name": "Ryan Wadhwa",
+      "department": "ECE",
+      "designation": "Associate Professor",
+      "cabin": "ECE-324",
+      "email": "ryan.wadhwa@campustracker.edu.in",
+      "phone": "9329509408",
+      "subjects": [
+        "VLSI Design",
+        "Digital Electronics",
+        "Microprocessors"
+      ]
+    },
+    {
+      "name": "Arnav Gulati",
+      "department": "ECE",
+      "designation": "Assistant Professor",
+      "cabin": "ECE-300",
+      "email": "arnav.gulati@campustracker.edu.in",
+      "phone": "9384759615",
+      "subjects": [
+        "VLSI Design",
+        "Embedded Systems",
+        "Signals and Systems"
+      ]
+    },
+    {
+      "name": "Elakshi Garg",
+      "department": "Mechanical",
+      "designation": "Professor",
+      "cabin": "MECH-401",
+      "email": "elakshi.garg@campustracker.edu.in",
+      "phone": "9696751693",
+      "subjects": [
+        "Machine Design",
+        "Fluid Mechanics",
+        "Thermodynamics"
+      ]
+    },
+    {
+      "name": "Tanya Chowdhury",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "cabin": "IT-215",
+      "email": "tanya.chowdhury@campustracker.edu.in",
+      "phone": "9721890096",
+      "subjects": [
+        "Linux Administration",
+        "Cloud Computing",
+        "Cyber Security"
+      ]
+    },
+    {
+      "name": "Madhup Balay",
+      "department": "IT",
+      "designation": "Assistant Professor",
+      "cabin": "IT-213",
+      "email": "madhup.balay@campustracker.edu.in",
+      "phone": "9727255918",
+      "subjects": [
+        "Software Engineering",
+        "Web Technologies",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "name": "Tanya Kurian",
+      "department": "EEE",
+      "designation": "Assistant Professor",
+      "cabin": "EEE-418",
+      "email": "tanya.kurian@campustracker.edu.in",
+      "phone": "9299528037",
+      "subjects": [
+        "Power Systems",
+        "Circuit Theory",
+        "Control Systems"
+      ]
+    },
+    {
+      "name": "Adah Butala",
+      "department": "Civil",
+      "designation": "Assistant Professor",
+      "cabin": "CIV-304",
+      "email": "adah.butala@campustracker.edu.in",
+      "phone": "9228727266",
+      "subjects": [
+        "Transportation Engineering",
+        "Concrete Technology",
+        "Surveying"
+      ]
+    }
+  ]
+}
