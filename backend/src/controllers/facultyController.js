@@ -6,7 +6,7 @@ import { list, success } from "../utils/apiResponse.js";
 import { getFacultyLiveStatus } from "../utils/liveStatus.js";
 
 function buildFacultyQuery(query) {
-  const filter = { isActive: true };
+  const filter = { isActive:{ $ne: false }};
   if (query.department) filter.department = query.department;
   if (query.location) filter.location = new RegExp(query.location, "i");
   if (query.search) {
@@ -66,7 +66,7 @@ export const getFaculty = asyncHandler(async (req, res) => {
 
 export const getFacultyById = asyncHandler(async (req, res) => {
   const faculty = await FacultyProfile.findOneAndUpdate(
-    { _id: req.params.id, isActive: true },
+    { _id: req.params.id, isActive:{ $ne: false }  },
     { $inc: { profileViews: 1 } },
     { new: true }
   );
