@@ -13,6 +13,7 @@ import { useAuth } from "../context/AuthContext";
 import { useNotifications } from "../context/NotificationContext";
 import { fetchFaculty } from "../services/facultyService";
 
+
 const storage = {
   get(key, fallback) {
     try {
@@ -129,32 +130,69 @@ export default function StudentDashboard() {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    let alive = true;
-    async function loadFaculty() {
-      try {
-        const data = await fetchFaculty({ limit: 50 }, token);
-        if (!alive) return;
-        setFacultyData(data.map((item) => ({
+  let alive = true;
+
+  async function loadFaculty() {
+    try {
+      console.log("TOKEN:", token);
+
+      const data = await fetchFaculty({}, token);
+
+      console.log("FACULTY RESPONSE:", data);
+
+      if (!alive) return;
+
+      setFacultyData(
+        data.map((item) => ({
           ...item,
           id: item._id || item.id,
-          avatar: item.avatar || item.image || `https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(item.name || "Faculty")}&backgroundColor=0f172a,312e81&textColor=06b6d4`,
+          avatar:
+            item.avatar ||
+            item.image ||
+            `https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(
+              item.name || "Faculty"
+            )}&backgroundColor=0f172a,312e81&textColor=06b6d4`,
           image: item.image || item.avatar,
-          timings: item.availableTime || item.timings || "No timetable available",
-          subjects: Array.isArray(item.subjects) ? item.subjects : String(item.subjects || "").split(",").filter(Boolean),
+          timings:
+            item.availableTime ||
+            item.timings ||
+            "No timetable available",
+          subjects: Array.isArray(item.subjects)
+            ? item.subjects
+            : String(item.subjects || "")
+                .split(",")
+                .filter(Boolean),
           cabin: item.cabin || item.location || "Cabin not assigned",
-          location: item.location || item.cabin || "Cabin not assigned",
-          status: item.status || item.liveStatus?.status || "Not Updated",
-        })));
-        setFacultyError("");
-      } catch (error) {
-        if (!alive) return;
-        setFacultyData([]);
-        setFacultyError(error.message || "Unable to load faculty from backend");
-      }
+          location:
+            item.location || item.cabin || "Cabin not assigned",
+          status:
+            item.status ||
+            item.liveStatus?.status ||
+            "Not Updated",
+        }))
+      );
+
+      setFacultyError("");
+    } catch (error) {
+      console.error("FACULTY ERROR:", error);
+
+      if (!alive) return;
+
+      setFacultyData([]);
+      setFacultyError(
+        error.message || "Unable to load faculty from backend"
+      );
     }
-    if (token) loadFaculty();
-    return () => { alive = false; };
-  }, [token]);
+  }
+
+  if (token && token !== "undefined" && token !== "null") {
+    loadFaculty();
+  }
+
+  return () => {
+    alive = false;
+  };
+}, [token]);
 
   const activeLabel = Object.entries(navMap).find(([, value]) => value === activeSection)?.[0] || "Dashboard";
   const favoriteSet = useMemo(() => new Set(favorites), [favorites]);
