@@ -1,56 +1,34 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 function requiredEmailEnv() {
-  const missing = ["EMAIL_HOST", "EMAIL_PORT", "EMAIL_USER", "EMAIL_PASS", "EMAIL_FROM"]
-    .filter((key) => !process.env[key]);
+  const missing = ["RESEND_API_KEY", "EMAIL_FROM"].filter((key) => !process.env[key]);
+
   if (missing.length) {
     throw new Error(`Email is not configured. Missing: ${missing.join(", ")}`);
   }
-
-  const placeholders = [
-    ["EMAIL_USER", "your_real_gmail@gmail.com"],
-    ["EMAIL_PASS", "your_google_app_password"],
-    ["EMAIL_FROM", "your_real_gmail@gmail.com"],
-  ].filter(([key, value]) => process.env[key]?.includes(value));
-
-  if (placeholders.length) {
-    throw new Error(`Email is still using placeholder values: ${placeholders.map(([key]) => key).join(", ")}`);
-  }
 }
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const sendEmail = async ({ to, subject, html, text }) => {
   requiredEmailEnv();
 
-  const emailPass = process.env.EMAIL_PASS.replace(/\s/g, "");
-  if (process.env.NODE_ENV !== "production") console.info(`Sending email to: ${to}`);
-  const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: Number(process.env.EMAIL_PORT),
-    secure: Number(process.env.EMAIL_PORT) === 465,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: emailPass,
-    },
-  });
-
   try {
-    await transporter.verify();
-    const info = await transporter.sendMail({
+    const info = await resend.emails.send({
       from: process.env.EMAIL_FROM,
       to,
       subject,
-      text,
       html,
+      text,
     });
-    if (process.env.NODE_ENV !== "production") console.info(`Email sent successfully: ${info.messageId}`);
+
+    console.log("Email sent successfully:", info);
     return info;
   } catch (error) {
     console.error("Email sending failed:", {
       to,
       subject,
       message: error.message,
-      code: error.code,
-      command: error.command,
       response: error.response,
     });
     throw error;
